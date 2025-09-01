@@ -1,4 +1,4 @@
-import "../../styles/Comentarios.css";
+import "../../styles/Comentario.css";
 
 const formatarData = (date) => {
   if (!date) return "";
@@ -13,7 +13,10 @@ const Comentario = ({ id, name, email, date, children, onRemove }) => {
     <div className="comentario-container">
       <div className="comentario-header">
         <h3 className="comentario-name">{name}</h3>
-        <button comentario-remove-button onClick={() => onRemove(id)}>
+        <button
+          className="comentario-remove-button"
+          onClick={() => onRemove(id)}
+        >
           &times;
         </button>
       </div>
