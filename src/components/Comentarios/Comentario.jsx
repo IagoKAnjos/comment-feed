@@ -1,3 +1,4 @@
+import userAvatar from "../../assets/images/user.png";
 import "../../styles/Comentario.css";
 
 const formatarData = (date) => {
@@ -11,6 +12,11 @@ const formatarData = (date) => {
 const Comentario = ({ id, name, email, date, children, onRemove }) => {
   return (
     <div className="comentario-container">
+      <img
+        className="comentario-avatar"
+        src={userAvatar}
+        alt={`Avatar de ${name}`}
+      />
       <div className="comentario-header">
         <h3 className="comentario-name">{name}</h3>
         <button
