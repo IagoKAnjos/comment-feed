@@ -1,0 +1,57 @@
+/* src/components/Comentario/Comentario.css */
+
+.comentario-container {
+  background-color: #2f2f2f;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.comentario-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.comentario-name {
+  margin: 0;
+  color: #a6c5e2;
+  font-size: 1.1em;
+}
+
+.comentario-email {
+  margin: 0 0 12px 0;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.comentario-content {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.comentario-date {
+  margin: 0;
+  font-size: 0.8em;
+  color: #777;
+  text-align: right;
+}
+
+.comentario-remove-button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0 8px;
+  line-height: 1;
+}
+
+.comentario-remove-button:hover {
+  color: #ff6b6b;
+}
