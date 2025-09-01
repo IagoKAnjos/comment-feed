@@ -46,7 +46,7 @@ function App() {
 
   const removerComentario = useCallback((id) => {
     setComentarios((prevComentarios) =>
-      prevComentarios.filter((c) => c.id !== id)
+      prevComentarios.filter((c) => c.id !== id),
     );
   }, []);
 
